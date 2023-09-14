@@ -3,8 +3,6 @@
 
 ## Features
 - Product Listing
-- Shopping Cart
-- Total Price Calculation
 - Responsive Design
 
 
