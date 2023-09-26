@@ -5,7 +5,6 @@ import Navbar from './Pages/Shared/Navbar'
 
 function App() {
 
-
   return (
     <>
       <Navbar></Navbar>

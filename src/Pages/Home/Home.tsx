@@ -1,8 +1,6 @@
 import Card from "../../Components/Card";
 import bikesData from "../../Data/Bikes";
 
-
-
 export type BikesType = {
     id?: number;
     title: string;
