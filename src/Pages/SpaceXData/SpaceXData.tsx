@@ -1,7 +1,5 @@
 import { useQuery } from "@apollo/client";
 import { GET_SPACEX_DATA } from "../../graphql/queries";
-import { History } from "../../graphql/__generated__/graphql";
-
 const SpaceXData = () => {
     const { loading, error, data } = useQuery(GET_SPACEX_DATA);
     if (loading) return <p>Loading...</p>;
@@ -11,7 +9,7 @@ const SpaceXData = () => {
     return (
         <div>
             {
-                histories?.map((history:History | null)=>(
+                histories?.map((history)=>(
                     <div key={history?.id}>
                         <p>{history?.title}</p>
                         <p>{history?.details}</p>
