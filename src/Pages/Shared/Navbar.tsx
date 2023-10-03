@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../../store/store";
 import { toggleDarkMode } from "../../store/slice/themeModeSlice";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -22,7 +23,7 @@ const Navbar = () => {
 
                         </ul>
                     </div>
-                    <a className="btn text-white btn-ghost normal-case text-lg md:text-3xl font-bold">Bikes</a>
+                    <Link to="/" className="btn text-white btn-ghost normal-case text-lg md:text-3xl font-bold">Bikes</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -31,6 +32,9 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end">
+                    <div className="text-white mr-3 text-lg font-bold">
+                    <Link to="/spacex">SpaceXData</Link>
+                    </div>
                     <label className="swap swap-rotate mr-8">
                         {/* this hidden checkbox controls the state */}
                         <input
